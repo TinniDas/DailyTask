@@ -1,11 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
-
-
-
-
 cinnamon_data = pd.read_csv('C:/Users/Ishita/Downloads/archive/balanced_cinnamon_quality_dataset.csv')
 print(cinnamon_data)
 
@@ -41,23 +36,20 @@ for header in header_list:
          median_val = cinnamon_data[col].median()
          first_diff = cinnamon_data[col].diff()
          print(f"Mean of {col}: {mean_val}")
+         print(f"Median of {col}: {median_val}")
 
-<<<<<<< Updated upstream
-        print(f"Median of {col}: {median_val}")
-=======
- #        print(f"Median of {col}: {median_val}")
->>>>>>> Stashed changes
+
          print(f"First difference of {col}:\n{first_diff}")
 
 
          # Plot
-         # plt.figure(figsize=(10, 6))
-         # first_diff.plot(kind='line', color='blue')
-         # plt.title('First Difference plot')
-         # plt.xlabel(f'Column:{col}')
-         # plt.ylabel(f' First difference Value of {col}')
-         # plt.show()
-         # continue
+         plt.figure(figsize=(10, 6))
+         first_diff.plot(kind='line', color='blue')
+         plt.title('First Difference plot')
+         plt.xlabel(f'Column:{col}')
+         plt.ylabel(f' First difference Value of {col}')
+         plt.show()
+         continue
      else:
          print(f"\nColumn '{col}' is not numeric. Skipping.")
 
