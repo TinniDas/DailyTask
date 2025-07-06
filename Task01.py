@@ -41,7 +41,12 @@ for header in header_list:
          median_val = cinnamon_data[col].median()
          first_diff = cinnamon_data[col].diff()
          print(f"Mean of {col}: {mean_val}")
-         print(f"Median of {col}: {median_val}")
+
+<<<<<<< Updated upstream
+        print(f"Median of {col}: {median_val}")
+=======
+ #        print(f"Median of {col}: {median_val}")
+>>>>>>> Stashed changes
          print(f"First difference of {col}:\n{first_diff}")
 
 
