@@ -46,13 +46,13 @@ for header in header_list:
 
 
          # Plot
-         plt.figure(figsize=(10, 6))
-         first_diff.plot(kind='line', color='blue')
-         plt.title('First Difference plot')
-         plt.xlabel(f'Column:{col}')
-         plt.ylabel(f' First difference Value of {col}')
-         plt.show()
-         continue
+         # plt.figure(figsize=(10, 6))
+         # first_diff.plot(kind='line', color='blue')
+         # plt.title('First Difference plot')
+         # plt.xlabel(f'Column:{col}')
+         # plt.ylabel(f' First difference Value of {col}')
+         # plt.show()
+         # continue
      else:
          print(f"\nColumn '{col}' is not numeric. Skipping.")
 
