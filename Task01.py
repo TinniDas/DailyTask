@@ -20,7 +20,7 @@ new_entry = pd.DataFrame({'Sample_ID':['L0071'],
             })
 print(new_entry)
 
-user_position = int(input("Enter position to insert: "))
+user_position = float(input("Enter position to insert: "))
 if user_position < 0 or user_position > (len(cinnamon_data)+1): #not below 0 index and not leaving cells empty at the end of dataframe
         raise ValueError("Invalid insertion index!")
 elif 0 < user_position < len(cinnamon_data):
@@ -43,11 +43,11 @@ for header in header_list:
          print(f"Mean of {col}: {mean_val}")
 
 <<<<<<< Updated upstream
-    print(f"Median of {col}: {median_val}")
+        print(f"Median of {col}: {median_val}")
 =======
  #        print(f"Median of {col}: {median_val}")
 >>>>>>> Stashed changes
-    print(f"First difference of {col}:\n{first_diff}")
+         print(f"First difference of {col}:\n{first_diff}")
 
 
          # Plot
